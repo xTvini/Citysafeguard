@@ -1,0 +1,35 @@
+#include <SoftwareSerial.h>
+
+SoftwareSerial bluetooth (4, 2); // TX, RX modulo bluetooth
+const moisture (A0);
+
+void setup()
+{
+  Serial.begin(9600);
+  bluetooth.begin(9600);
+}
+
+void loop()
+{
+  int moisture = 0;
+  moisture = analogRead(A0);
+  
+  delay(100);
+  // Definir o LED RGB com base na leitura de umidade
+  if (moisture < 200) {
+    bluetooth.print("PERIGO Subito! ");
+    bluetooth.println(moisture);
+  } else if (moisture < 400) {
+    bluetooth.print("PERIGO! ");
+    bluetooth.println(moisture);
+  } else if (moisture < 600) {
+    bluetooth.print("Atenção! ");
+    bluetooth.println(moisture);
+  } else if (moisture < 800) {
+    bluetooth.print("Pouco Úmido: ");
+    bluetooth.println(moisture);
+  } else {
+    bluetooth.println("seco "); 
+    bluetooth.println(moisture);
+ }
+}
