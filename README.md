@@ -75,8 +75,10 @@ Analisa a leitura de umidade e envia mensagens correspondentes via Bluetooth:
     Vermelho: Nível de umidade abaixo de 200
     Amarelo: Nível de umidade entre 200 e 399
     Verde: Nível de umidade entre 400 e 599
-    Azul: NíCoordenar um sensor de umidade do solo envolve monitorar, interpretar e, se necessário, agir com base nas leituras do sensor para garantir condições adequadas de umidade para as plantas. Aqui estão instruções sobre como coordenar um sensor de umidade:
-## Coordenar um sensor de umidade do solo envolve monitorar, interpretar e, se necessário, agir com base nas leituras do sensor para garantir condições adequadas de umidade para as plantas. Aqui estão as instruções necessárias sobre como operar um sensor de umidade:
+    Azul: Nível de umidade entre ??? e ???
+    
+## Instruções de uso
+Coordenar um sensor de umidade do solo envolve monitorar, interpretar e, se necessário, agir com base nas leituras do sensor para garantir condições adequadas de umidade para as plantas. Aqui estão as instruções necessárias sobre como operar um sensor de umidade:
 
     1. Instalação Física:
 Posicione o sensor de umidade no solo da sua planta, certificando-se de que as partes sensíveis estejam totalmente enterradas.
