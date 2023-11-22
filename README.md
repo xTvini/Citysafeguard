@@ -63,28 +63,22 @@ Lê o nível de umidade do solo a partir do sensor e introduz um atraso para est
     Copy code
       // Define o LED RGB com base na leitura de umidade
       if (moisture < 200) {
-        bluetooth.print("PERIGO Subito! ");  // Vermelho
+        bluetooth.print("PERIGO Subito! ");
         bluetooth.println(moisture);
       } else if (moisture < 400) {
-        bluetooth.print("PERIGO! ");  // Amarelo
+        bluetooth.print("PERIGO! ");
         bluetooth.println(moisture);
       } else if (moisture < 600) {
-        bluetooth.print("Atenção! ");  // Verde
+        bluetooth.print("Atenção! ");
         bluetooth.println(moisture);
       } else if (moisture < 800) {
-        bluetooth.print("Pouco Úmido: ");  // Azul
+        bluetooth.print("Pouco Úmido: ");
         bluetooth.println(moisture);
       } else {
-        bluetooth.println("seco ");  // Seco
+        bluetooth.print("Seco: ");
+        bluetooth.println(moisture);
       }
     }
-    
-Analisa a leitura de umidade e envia mensagens correspondentes via Bluetooth:
-
-    Vermelho: Nível de umidade abaixo de 200
-    Amarelo: Nível de umidade entre 200 e 399
-    Verde: Nível de umidade entre 400 e 599
-    Azul: Nível de umidade entre ??? e ???
     
 ## Instruções de uso
 Coordenar um sensor de umidade do solo envolve monitorar, interpretar e, se necessário, agir com base nas leituras do sensor para garantir condições adequadas de umidade para as plantas. Aqui estão as instruções necessárias sobre como operar um sensor de umidade:
