@@ -1,10 +1,10 @@
-# Citysafeguard
+# Projetos 1 - Grupo 4 - Citysafeguard
 
 CESAR School - CC e Design 2023.2 - Projetos 1 - Grupo 4
 
 # Sistema de Monitoramento de Umidade com Comunicação Bluetooth
 
-Este código Arduino foi desenvolvido para monitorar os níveis de umidade do solo usando um sensor de umidade do solo e transmitir os resultados via Bluetooth. O sistema utiliza um LED RGB para representar visualmente os níveis de umidade e um módulo Bluetooth para transmitir os dados sem fio.
+Este código Arduino foi desenvolvido para monitorar os níveis de umidade em edifícios-caixão usando um sensor de umidade do solo e transmissão dos resultados via Bluetooth. O sistema utiliza um LED RGB para representar visualmente os níveis de umidade e um módulo Bluetooth para transmitir os dados sem fio.
 
 ## Componentes Utilizados
 
