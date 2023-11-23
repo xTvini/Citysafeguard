@@ -1,7 +1,8 @@
 #include <SoftwareSerial.h>
 
-SoftwareSerial bluetooth (4, 2); // TX, RX modulo bluetooth
+SoftwareSerial bluetooth (4, 2); // TX==4, RX==2 modulo bluetooth
 const moisture (A0);
+int porcentagem = 0;
 
 void setup()
 {
@@ -13,23 +14,31 @@ void loop()
 {
   int moisture = 0;
   moisture = analogRead(A0);
+//transformar a úmidade em porcentagem. sendo 293 100% úmido e 1023 0% úmido
+  porcentagem=map(moisture,293,1023,100,0);
   
-  delay(100);
-  // Definir o LED RGB com base na leitura de umidade
-  if (moisture < 200) {
+  delay(60000);//delay de um minuto
+  //(como é em millisegundos eu pego a quantidade de minutos, transformo em segundos e multiplico por 1000)
+  //Ex:(3min*60s*1000) assim o delay será de 3 minutos
+    if (moisture < 300) {
     bluetooth.print("PERIGO Subito! ");
-    bluetooth.println(moisture);
-  } else if (moisture < 400) {
+    bluetooth.print(porcentagem);
+    bluetooth.println("% úmido");
+  } else if (moisture < 500) {
     bluetooth.print("PERIGO! ");
-    bluetooth.println(moisture);
-  } else if (moisture < 600) {
+    bluetooth.print(porcentagem);
+    bluetooth.println("% úmido");
+  } else if (moisture < 700) {
     bluetooth.print("Atenção! ");
-    bluetooth.println(moisture);
-  } else if (moisture < 800) {
+    bluetooth.print(porcentagem);
+    bluetooth.println("% úmido");
+  } else if (moisture < 900) {
     bluetooth.print("Pouco Úmido: ");
-    bluetooth.println(moisture);
+    bluetooth.print(porcentagem);
+    bluetooth.println("% úmido");
   } else {
-    bluetooth.println("seco "); 
-    bluetooth.println(moisture);
+    bluetooth.print("Seco: "); 
+    bluetooth.print(porcentagem);
+    bluetooth.println("% úmido");
  }
 }
