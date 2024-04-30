@@ -122,18 +122,18 @@ Verifique regularmente o funcionamento do sensor e dos componentes relacionados.
 Substitua a bateria, se aplicável, e resolva quaisquer problemas identificados.
 Lembre-se de que a coordenação eficaz envolve entender as necessidades específicas das suas plantas, ajustar os parâmetros conforme necessário e estar atento às condições do solo ao longo do tempo.
 ### Equipe:
-Ciências da Computação:\n
-Vinícius Diniz\n
-Kauane Melo
-Thais Aguiar
-Igor Cubits
-Maria Fernanda Ordonho
-Lucas Sukar
-Bernardo Heuer
-Marcelo Henrique
-Design:
-Sophia Latache
-Maria Eduarda Ximenes
-Lucca Martins
+Ciências da Computação:<br>
+1-Vinícius Diniz,<br>
+2-Kauane Melo,<br>
+3-Thais Aguiar,<br>
+4-Igor Cubits,<br>
+5-Maria Fernanda Ordonho,<br>
+6-Lucas Sukar,<br>
+7-Bernardo Heuer,<br>
+8-Marcelo Henrique<br>
+Design:<br>
+9-Sophia Latache<br>
+10-Maria Eduarda Ximenes<br>
+11-Lucca Martins
 
 
