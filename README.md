@@ -122,8 +122,8 @@ Verifique regularmente o funcionamento do sensor e dos componentes relacionados.
 Substitua a bateria, se aplicável, e resolva quaisquer problemas identificados.
 Lembre-se de que a coordenação eficaz envolve entender as necessidades específicas das suas plantas, ajustar os parâmetros conforme necessário e estar atento às condições do solo ao longo do tempo.
 ### Equipe:
-Ciências da Computação:
-Vinícius Diniz
+Ciências da Computação:\n
+Vinícius Diniz\n
 Kauane Melo
 Thais Aguiar
 Igor Cubits
